@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const NewPage = () => {
   return (
     <div>
-      hello world (new)
+      New page
       <Link to="/">Go home</Link>.
     </div>
   )
