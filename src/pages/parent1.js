@@ -23,8 +23,9 @@ const Parent1 = () => {
     <div style={{ height: '100%', width: '100%', background: 'pink' }}>
       <h1>MID-NODE1</h1>
       <Link to="/">Go home</Link>.
-      <Link to="/parent2">Go mid-node2</Link>.
-      <Link to="/grandparent2">Go to leaf-node2</Link>.
+      <Link to="/grandparent1">Go leaf-node2 (go down the hierarchy)</Link>.
+      <Link to="/parent2">Go mid-node2 (go to sibling node)</Link>.
+      {/* <Link to="/grandparent2">Go to leaf-node2</Link>. */}
       {nodes.map((node, i) => (
         <div key={i.toString()}>
           <div>{node.node.title}</div>

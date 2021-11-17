@@ -27,7 +27,7 @@ const GrandParent1 = () => {
     <div style={{ height: '100%', width: '100%', background: 'pink' }}>
       <h1>LEAF-NODE1</h1>
       <Link to="/">Go home</Link>.
-      <Link to="/parent1">Go to mid-node1</Link>.
+      <Link to="/parent1">Go to mid-node1 (Go to parent node)</Link>.
       {nodes.map((node, i) => (
         <div key={i.toString()}>
           <div>{node.node.title}</div>
