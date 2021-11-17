@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
-import LazyThumb from "../components/lazy-thumb"
+// import LazyThumb from "../components/lazy-thumb"
 
 export default function CustomerCase() {
   const data = useStaticQuery(graphql`
@@ -46,7 +46,7 @@ export default function CustomerCase() {
             <p>{data.csCustomersPage.customer_case_studies_section.copy}</p>
             <a className="button hover-orange" href={data.csCustomersPage.customer_case_studies_section.cta.link}>{data.csCustomersPage.customer_case_studies_section.cta.text}</a>
             <div className="logo-garden">
-              {data.csCustomersPage.customer_case_studies_section.logos.map((logo, idx) => (
+              {/* {data.csCustomersPage.customer_case_studies_section.logos.map((logo, idx) => (
                 <a href={logo.link} key={idx}>
                   {logo.logo.map((img, index) => (
                     <LazyThumb
@@ -55,7 +55,7 @@ export default function CustomerCase() {
                       className="logo" />
                   ))}
                 </a>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
